@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import {Link} from 'react-router-dom';
-import {FaTimes} from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import { FaTimes } from 'react-icons/fa';
 
 export const SidebarContainer = styled.aside`
 position: fixed;
@@ -54,6 +54,7 @@ transition: 0.2s ease-in-out;
 text-decoration: none;
 color: #000;
 cursor: pointer;
+
 &:hover {
   color: #e31837;
   transition: 0.2s ease-in-out;

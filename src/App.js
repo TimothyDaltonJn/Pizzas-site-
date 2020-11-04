@@ -1,21 +1,21 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { GlobalStyle } from './globalStyle';
-import Hero from './components/Hero';
-import Products from './components/Products';
-import { productData, productDataTwo } from './components/Products/data';
-import Feature from './components/Feature';
-import Footer from './components/Footer';
+import Pizzas from "./pages/pizzas";
+import Deserts from "./pages/deserts";
+import Fullmenu from "./pages/fullmenu";
+import Home from "./pages/home";
 
 function App() {
   return (
     <Router>
       <GlobalStyle/>
-      <Hero />
-      <Products heading='Choose your favorite!' data={productData}/>
-      <Feature/>
-      <Products heading='Sweet treats for you' data={productDataTwo}/>
-      <Footer/>
+      <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/pizza"  component={Pizzas} />
+          <Route path="/desserts"  component={Deserts} />
+          <Route path="/full_menu"  component={Fullmenu} />
+      </Switch>
     </Router>
   );
 }
