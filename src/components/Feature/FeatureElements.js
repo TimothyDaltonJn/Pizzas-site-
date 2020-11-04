@@ -4,7 +4,7 @@ import FeaturePic from '../../images/featured4.jpg'
 export const FeatureContainer = styled.div`
 background: linear-gradient( to right, rgba(0, 0, 0, 1), 
 rgba(0, 0, 0, 0.1)), url(${FeaturePic});
-height: 600px;
+height: 500px;
 // max-height: 500px;
 background-position: center;
 background-size: cover;
