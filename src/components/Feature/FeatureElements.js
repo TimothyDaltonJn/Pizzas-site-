@@ -17,7 +17,7 @@ text-align: center;
 padding: 0 1rem;
 
 h1 {
-    font-size: clamp(3rem, 5vw, 5rem)
+    font-size: clamp(3rem, 3.4vw, 5rem)
 }
 p {
     margin-bottom: 1rem;
@@ -27,15 +27,14 @@ p {
 export const FeatureButtom = styled.button`
   font-size: 1.4rem;
   padding: 0.6rem 3rem;
-  border: none;
-  background: #ffc500;
-  color: #000;
-  transition: 0.2s ease-out;
+  border-radius: 7px;
+  background: #e31837;
+  cursor: pointer;
+  color: #fff;
+  transition-duration: 0.4s;
+
 
   &:hover {
-      color: #fff;
-      background: #e31837;
-      transition: 0.2s ease-out;
-      cursor: pointer;
+      background: rgb(255, 128, 0);
   }
 `

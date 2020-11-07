@@ -68,12 +68,14 @@ export const ProductButton = styled.button`
   padding: 1rem 4rem;
   border: none;
   background: #e31837;
+  border-radius: 7px;
   color: #fff;
-  transition: 0.2 ease-out;
+  cursor: pointer;
+  transition-duration: 0.4s;
+ 
   &:hover {
-    background: #ffc500;
-    transition: 0.2s ease-out;
-    cursor: pointer;
+    background: rgb(255, 128, 0);
+    
     color: #000;
   }
 `;

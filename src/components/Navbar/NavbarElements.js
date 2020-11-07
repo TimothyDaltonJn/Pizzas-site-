@@ -1,22 +1,53 @@
-import styled from 'styled-components';
-import { NavLink as Link } from 'react-router-dom';
-import { FaPizzaSlice } from 'react-icons/fa';
+import styled from "styled-components";
+import { NavLink as Link } from "react-router-dom";
 
-export const Nav = styled.nav`
-  background: transparent;
-  height: 80px;
+export const Nav = styled.div`
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   font-weight: 700;
+  // background: rgb(255, 128, 0);
+  // position: fixed;
+`;
+
+export const NavCart = styled.div`
+  display: flex;
+  align-items: center;
+
+button {
+  background-color: #e31837;
+  margin-left: 17px;
+  border-radius: 7px;
+  color: white;
+  padding: 8px 29px;
+  font-weight: 400;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  transition-duration: 0.4s;
+
+  &:hover {
+    background-color: rgb(255, 128, 0); 
+  }
+
+
 `;
 
 export const NavLink = styled(Link)`
-  color: #fff;
-  font-size: 2rem;
   display: flex;
   align-items: center;
+  color: #fff;
+  font-size: 2rem;
+  height: 60px;
   text-decoration: none;
   cursor: pointer;
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 1;
+  }
 
   @media screen and (max-width: 400px) {
     position: absolute;
@@ -26,19 +57,25 @@ export const NavLink = styled(Link)`
 `;
 
 export const NavIcon = styled.div`
-display: block;
-position: absolute;
-top: 0;
-right: 0;
-cursor: pointer;
-color: #fff;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
 
-p{
-  transform: translate(-175%, 100%);
-  font-weight: bold;
-}
-`
-export const Bars = styled(FaPizzaSlice)`
-font-size: 2rem;
-transform: translate(-30%, -15%);
-`
+  button {
+    background-color: #e31837;
+    margin-right: 17px;
+    border-radius: 7px;
+    color: white;
+    padding: 8px 29px;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    transition-duration: 0.4s;  
+   
+    &:hover {
+      background-color: rgb(255, 128, 0);
+    }
+`;

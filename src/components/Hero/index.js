@@ -19,7 +19,7 @@ const Hero = () => {
   return (
     <HeroContainer>
       <Navbar toggle={toggle} />
-        <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Sidebar isOpen={isOpen} toggle={toggle} />
       <HeroContent>
         <HeroItems>
           <HeroH1>Greatest Pizza Ever</HeroH1>

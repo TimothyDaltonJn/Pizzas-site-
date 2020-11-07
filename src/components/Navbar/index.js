@@ -1,14 +1,22 @@
 import React from 'react'
-import { Nav, NavLink, NavIcon, Bars }from './NavbarElements'
+import { NavCart, Nav, NavLink, NavIcon, }from './NavbarElements'
 
 const Navbar = ({toggle}) => {
     return (
         <>
         <Nav>
+            <NavCart to="/">
+                <button>
+                    Card
+                    {/* <img src="../../images/pizza-1.jpg" alt="" style={{width:"200px"}}/> */}
+                </button>
+            </NavCart>
             <NavLink to='/'>Pizza</NavLink>
             <NavIcon onClick={toggle}>
-                <p>Меню</p>
-                <Bars/>
+               <button className="btn">
+               
+                   Menu
+                </button>
             </NavIcon>
         </Nav>
         </>

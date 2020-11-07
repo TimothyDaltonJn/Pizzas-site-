@@ -50,7 +50,7 @@ export const productData = [
       alt: 'Ice Cream',
       name: 'Caramel Wonder',
       desc:
-        'Vanilla ice cream covered with caramel and chocolate glaze topped with a coco stick',
+        'Vanilla ice cream covered with caramel and chocolate glaze topped with ',
       price: '$12.99',
       button: 'Add to Cart'
     },
